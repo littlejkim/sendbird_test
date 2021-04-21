@@ -12,7 +12,8 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		3475E9292630595200FE0DCF /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3475E9282630595200FE0DCF /* BootSplash.storyboard */; };
+		3475E93326305AD400FE0DCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3475E93226305AD400FE0DCF /* Assets.xcassets */; };
 		E2D16B317E35FEE118142569 /* libPods-sendbird.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2442610E972B3F82E944AC31 /* libPods-sendbird.a */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +38,8 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = sendbird/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = sendbird/main.m; sourceTree = "<group>"; };
 		2442610E972B3F82E944AC31 /* libPods-sendbird.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sendbird.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = sendbird/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3475E9282630595200FE0DCF /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = sendbird/BootSplash.storyboard; sourceTree = "<group>"; };
+		3475E93226305AD400FE0DCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CF296C231CDA7C0436FDF47 /* Pods-sendbird-sendbirdTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sendbird-sendbirdTests.debug.xcconfig"; path = "Target Support Files/Pods-sendbird-sendbirdTests/Pods-sendbird-sendbirdTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9694BEE001C22E81C286633 /* libPods-sendbird-sendbirdTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sendbird-sendbirdTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0581EC02421FD23C7FF1AC /* Pods-sendbird-sendbirdTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sendbird-sendbirdTests.release.xcconfig"; path = "Target Support Files/Pods-sendbird-sendbirdTests/Pods-sendbird-sendbirdTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,11 +88,12 @@
 		13B07FAE1A68108700A75B9A /* sendbird */ = {
 			isa = PBXGroup;
 			children = (
+				3475E9282630595200FE0DCF /* BootSplash.storyboard */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				3475E93226305AD400FE0DCF /* Assets.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = sendbird;
@@ -145,7 +148,6 @@
 				8CF296C231CDA7C0436FDF47 /* Pods-sendbird-sendbirdTests.debug.xcconfig */,
 				CE0581EC02421FD23C7FF1AC /* Pods-sendbird-sendbirdTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -243,8 +245,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				3475E93326305AD400FE0DCF /* Assets.xcassets in Resources */,
+				3475E9292630595200FE0DCF /* BootSplash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,18 +488,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V54GW3S66H;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = sendbird/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.sendbird.test;
 				PRODUCT_NAME = sendbird;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -511,6 +518,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V54GW3S66H;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = sendbird/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -521,7 +531,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.sendbird.test;
 				PRODUCT_NAME = sendbird;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
